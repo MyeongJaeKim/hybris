@@ -5,7 +5,7 @@
 #### Introduction
 
   SAP hybris is supporting two DB connection modes. One is JNDI, and another is hybris internal pool.
-  If you want to use hybris internal pool, you should configure pooling paramters to local.properties file including DB access password, even if production.
+  If you want to use hybris internal pool, you should configure pooling parameters to local.properties file including DB access password, even if production.
   This will be security threaten. Everyone knows DB password. hybris-dbpassword-encryption is useful to it.
 
 #### How to use it
@@ -39,9 +39,5 @@
 #### Customization
 
 AspectJ Weaver will try to intercept default class loader.
-And re-weaving will be occured automatically this can stop the JVM for a while.
-So you have to exclude files other than ConfigIntf, please check aop.xml in Manafest folder.
-
-
-
-
+Reweaving will be occurred automatically, this will stop your JVM for a while.
+You have to exclude files other than ConfigIntf, please check aop.xml in Manifest folder.
