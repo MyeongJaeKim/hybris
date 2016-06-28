@@ -1,0 +1,12 @@
+ <aspectj>
+
+    <weaver options="-Xset:weaveJavaxPackages=true">
+        <include within="de.hybris.platform.util.config.*"/>
+        <include within="hybris.dbpassword.decryptor"/>
+    </weaver>
+    
+    <aspects>
+        <aspect name="hybris.dbpassword.decryptor.DatabasePasswordGetterAspect"/>
+    </aspects>
+
+</aspectj>
