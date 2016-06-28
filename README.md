@@ -36,6 +36,12 @@
    tomcat.generaloptions=... -javaagent:${HYBRIS_HOME_DIR}/tomcat/lib/aspectjweaver.jar
 ```
 
+#### Customization
+
+AspectJ Weaver will try to intercept default class loader.
+And re-weaving will be occured automatically this can stop the JVM for a while.
+So you have to exclude files other than ConfigIntf, please check aop.xml in Manafest folder.
+
 
 
 
